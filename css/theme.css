@@ -9623,3 +9623,6 @@ footer.footer-7 {
     left: 10px;
 }
 }
+input#reloj {
+    display: none;
+}
