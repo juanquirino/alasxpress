@@ -9447,7 +9447,7 @@ footer.footer-7 {
 .fixed-form {
     position: fixed;
     padding: 0;
-    bottom: 0;
+    bottom: -3.5%;
     transform: translateY(-50%);
     right: 1.85714286em;
     z-index: 10;
