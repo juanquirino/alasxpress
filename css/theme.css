@@ -3309,7 +3309,7 @@ form[action*='list-manage.com'] .small-meta {
     background-color: #31639c;
   }
   .bar--absolute {
-    position: absolute;
+    position: fixed;
   }
   .bar--absolute,
   .pos-fixed {
