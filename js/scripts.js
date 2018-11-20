@@ -144,7 +144,7 @@ mr = (function (mr, $, window, document){
         });
     };
 
-    // ANIMAR CONTADOR
+    /* ANIMAR CONTADOR
 
     var numAnim = new CountUp("contador1", 5, 98);
         if (!numAnim.error) {
@@ -152,6 +152,8 @@ mr = (function (mr, $, window, document){
         } else {
             console.error(numAnim.error);
     }
+
+    */
 
     // Set src attribute of element from its data-src where it was temporarily stored earlier
     mr.util.activateIdleSrc = function(context, selector){

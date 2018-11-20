@@ -400,6 +400,7 @@
             <i class="stack-interface stack-up-open-big"></i>
         </a>
         <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/jquery.onscreen.min.js"></script>
         <script src="js/flickity.min.js"></script>
         <script src="js/easypiechart.min.js"></script>
         <script src="js/parallax.js"></script>
@@ -419,5 +420,18 @@
         <script src="js/scripts.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>AOS.init();</script>
+        <script>
+            $(document).scroll(function() {
+                if($("#section3").is(':onScreen')) {
+                        var numAnim = new CountUp("contador1", 5, 98);
+                            if (!numAnim.error) {
+                                numAnim.start();
+                            } else {
+                                console.error(numAnim.error);
+                        }
+                    //do all your stuffs here when element is visible.
+                }
+            });
+        </script>
     </body>
 </html>
