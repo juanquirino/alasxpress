@@ -144,17 +144,6 @@ mr = (function (mr, $, window, document){
         });
     };
 
-    /* ANIMAR CONTADOR
-
-    var numAnim = new CountUp("contador1", 5, 98);
-        if (!numAnim.error) {
-            numAnim.start();
-        } else {
-            console.error(numAnim.error);
-    }
-
-    */
-
     // Set src attribute of element from its data-src where it was temporarily stored earlier
     mr.util.activateIdleSrc = function(context, selector){
         
@@ -178,6 +167,18 @@ mr = (function (mr, $, window, document){
             playingVideo.pause();
         });
     };
+
+    // NAVEGADOR MENU FLUIDO CLIC
+
+    $('.menu-horizontal a[href^="#"]').on('click', function(event) {
+      var target = $(this.getAttribute('href'));
+      if (target.length) {
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top-110
+        }, 1000);
+      }
+    });
 
     // Take a text value in either px (eg. 150px) or vh (eg. 65vh) and return a number in pixels.
     mr.util.parsePixels = function(text){
@@ -2967,3 +2968,37 @@ mr = (function (mr, $, window, document){
 	  return mr;
 
 }(mr, jQuery, window, document));
+
+
+$(document).scroll(function() {
+
+    //estadiscticas seccion 3
+
+if($("#section3").is(':onScreen')) {
+var estado = document.getElementById("reloj").value;
+if(estado ==""){
+        var numAnim = new CountUp("contador1", 0, 98);
+            if (!numAnim.error) {
+                numAnim.start();
+              document.getElementById("reloj").value="aaa"
+            } else {
+                console.error(numAnim.error);
+        }
+        var numAnim2 = new CountUp("contador2", 0,80);
+            if (!numAnim2.error) {
+                numAnim2.start();
+              
+            } else {
+                console.error(numAnim2.error);
+        }
+
+         var numAnim3 = new CountUp("contador3", 0, 0.08, 2);
+            if (!numAnim3.error) {
+                numAnim3.start();
+              
+            } else {
+                console.error(numAnim3.error);
+        }
+}
+}
+});

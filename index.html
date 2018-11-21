@@ -67,9 +67,32 @@
                                         <a href="#section3" class="">POR QUÉ ELEGIRNOS</a>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="#" class="">QUÉ NOS GUÍA</a>
+                                        <span class="dropdown__trigger">QUÉ NOS GUÍA</span>
+                                            <div class="dropdown__container">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="dropdown__content col-lg-2 col-md-4">
+                                                            <ul class="menu-vertical">
+                                                                <li>
+                                                                    <a href="#section4">
+                                                                        NUESTROS VALORES
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#section5">
+                                                                        PILARES DE SERVICIO
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <!--end dropdown content-->
+                                                    </div>
+                                                    <!--end row-->
+                                                </div>
+                                            </div>
                                         <!--end dropdown container-->
                                     </li>
+
                                     <li class="dropdown">
                                         <a href="#contacto" class="">CONTÁCTANOS</a>
                                         <!--end dropdown container-->
@@ -373,7 +396,7 @@
                                         <a href="#section3" class="">POR QUÉ ELEGIRNOS</a>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="#" class="">QUÉ NOS GUÍA</a>
+                                        <a href="#section4" class="">QUÉ NOS GUÍA</a>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#contacto" class="">CONTÁCTANOS</a>
@@ -420,38 +443,5 @@
         <script src="js/scripts.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>AOS.init();</script>
-        <script>
-            $(document).scroll(function() {
-               
-                if($("#section3").is(':onScreen')) {
-               var estado = document.getElementById("reloj").value;
-                if(estado ==""){
-                        var numAnim = new CountUp("contador1", 0, 98);
-                            if (!numAnim.error) {
-                                numAnim.start();
-                              document.getElementById("reloj").value="aaa"
-                            } else {
-                                console.error(numAnim.error);
-                        }
-                        var numAnim2 = new CountUp("contador2", 0,80);
-                            if (!numAnim2.error) {
-                                numAnim2.start();
-                              
-                            } else {
-                                console.error(numAnim2.error);
-                        }
-
-                         var numAnim3 = new CountUp("contador3", 0, 0.08, 2);
-                            if (!numAnim3.error) {
-                                numAnim3.start();
-                              
-                            } else {
-                                console.error(numAnim3.error);
-                        }
-                    //do all your stuffs here when element is visible.
-                }
-            }
-            });
-        </script>
     </body>
 </html>
