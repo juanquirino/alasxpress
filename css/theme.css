@@ -5960,7 +5960,7 @@ p .material-icons:first-child {
     content: attr(data-tooltip);
     position: absolute;
     box-sizing: border-box;
-    top: -40px;
+    top: -60px;
     left: 50%;
     transform: translateX(-50%);
     background: #5f6060;
@@ -9631,4 +9631,87 @@ input#reloj {
 .modal-content.video-modal {
     border: none;
     background-color: transparent;
+}
+.video-modal .close {
+    color: #fff;
+    opacity: 1;
+    font-size: 1em;
+}
+.video-modal .close:not(:disabled):not(.disabled):hover {
+    opacity: 1;
+    color: rgb(243, 146, 0);
+    text-shadow: none;
+}
+.modal-content .modal-header {
+    width: 100%;
+    display: block;
+}
+
+.modal-content.orden-despacho {
+    border: none;
+}
+.orden-despacho .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 0;
+    height: auto;
+}
+.orden-despacho .modal-title {
+    color: #5A7EBF;
+    float: left;
+    width: 100%;
+    margin: 5px 0;
+}
+.orden-despacho .cont-resume {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    margin: 1.2rem 0;
+}
+.orden-despacho  .cont-resume:before {
+    position: absolute;
+    display: block;
+    width: 0.2rem;
+    height: 100%;
+    top: 0.45rem;
+    height: calc(100% - 0.8rem);
+    content: "";
+    border-radius: 0.2rem;
+    background: #EE7203;
+}
+.orden-despacho  .cont-resume .info {
+  padding-left: 1.4rem;
+  padding-right: 0.5rem;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 0px;
+  flex: 1 0 0px;
+}
+.orden-despacho .cont-resume .info .h6 {
+    margin: 0;
+    padding: 0;
+}
+.orden-despacho .cont-resume .info span {
+    position: relative;
+    padding-left: 1.6rem;
+}
+.orden-despacho .cont-resume .info .material-icons {
+    font-size: 1.5em;
+    color: #5a7ebf;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+.orden-despacho .cont-resume .modal-footer .alert {
+    border: none;
+    float: left;
+    width: 100%;
+    text-align: center;
 }
