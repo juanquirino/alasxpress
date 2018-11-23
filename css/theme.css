@@ -9709,7 +9709,7 @@ input#reloj {
     top: 0;
     left:0;
 }
-.orden-despacho .cont-resume .modal-footer .alert {
+.orden-despacho .modal-footer .alert {
     border: none;
     float: left;
     width: 100%;
