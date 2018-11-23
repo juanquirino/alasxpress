@@ -137,7 +137,7 @@
                     <div class="row">
                         <div class="col-md-12" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
                             <h1>TUS PRODUCTOS, COMO SOÑASTE QUE LO RECIBAN, ENTREGADOS A TIEMPO Y DONDE ELLOS DECIDAN</h1>
-                            <h3>Una experiencia única de entregas comienza <a href="#">aquí</a></h3>
+                            <h3>Una experiencia única de entregas comienza <a href="#" data-toggle="modal" data-target="#div-video">aquí</a></h3>
                             <i class="material-icons dp48 icon">arrow_downward</i>
                         </div>
                     </div>
@@ -415,13 +415,28 @@
                     </div>
                     <!--end of row-->
                 </div>
-<input type="text" id="reloj">
+                <input type="text" id="reloj">
             </footer>
         </div>
         <!--<div class="loader"></div>-->
         <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
             <i class="stack-interface stack-up-open-big"></i>
         </a>
+
+        <!-- Modal -->
+        <div class="modal fade" id="div-video" tabindex="-1" role="dialog" aria-labelledby="div-video" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content video-modal">
+              <div class="">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <video width="100%" height="auto" controls>
+                      <source src="video-lorem.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <script src="js/jquery-3.1.1.min.js"></script>
         <script src="js/jquery.onscreen.min.js"></script>
         <script src="js/flickity.min.js"></script>

@@ -9628,3 +9628,7 @@ footer.footer-7 {
 input#reloj {
     display: none;
 }
+.modal-content.video-modal {
+    border: none;
+    background-color: transparent;
+}
