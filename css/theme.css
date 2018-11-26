@@ -9563,7 +9563,7 @@ footer.footer-7 {
 @media (max-width: 1366px) {
 
 .fixed-form {
-    width: 27%;
+    width: 35%;
     bottom: -5.5%;
 }
 
@@ -9652,6 +9652,9 @@ input#reloj {
     color: #fff;
     opacity: 1;
     font-size: 1em;
+    position: absolute;
+    top: 0;
+    right: -30px;
 }
 .video-modal .close:not(:disabled):not(.disabled):hover {
     opacity: 1;
