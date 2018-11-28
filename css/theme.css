@@ -9745,7 +9745,7 @@ input#reloj {
     width: 100%;
     text-align: center;
 }
-@media all and (min-height: 600px) and (min-width: 767px) {
+@media all and (min-height: 600px) and (max-width: 767px) {
   .pos-vertical-center {
     top: 30%;
 }
