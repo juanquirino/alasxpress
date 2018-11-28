@@ -3476,8 +3476,16 @@ form[action*='list-manage.com'] .small-meta {
 }
 @media all and (max-width: 991px) {
   .text-left-sm {
-    text-align: left;
+    text-align: left !important;
   }
+.box-full {
+  width: 100% !important;
+  max-width: 100%;
+  margin: 0 0 20px 0;
+}
+.cont-box .cont-title {
+    min-height: 200px;
+}
 }
 section > .row--gapless {
   padding-left: 0;
@@ -3499,10 +3507,12 @@ section.text-right > .container:last-child > .row:only-child > div[class*='col-'
 section {
     padding-top: 3.428571em;
     padding-bottom: 3.428571em;
+    overflow: hidden;
 }
 footer {
     padding-top: 3.428571em;
     padding-bottom: 6.428571em;
+    overflow: hidden;
 }
 section.space--xxs,
 footer.space--xxs {
