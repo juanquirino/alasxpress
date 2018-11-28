@@ -394,6 +394,7 @@ body {
   .height-100 {
     height: 100vh;
   }
+
 }
 section.height-auto {
   height: auto;
@@ -9743,4 +9744,9 @@ input#reloj {
     float: left;
     width: 100%;
     text-align: center;
+}
+@media all and (min-height: 600px) and (min-width: 767px) {
+  .pos-vertical-center {
+    top: 30%;
+}
 }
