@@ -9755,7 +9755,7 @@ input#reloj {
   display: block;
 }
 .fixed-form {
-    bottom: 0;
+    bottom: -2.3%;
 }
 }
 @media all and (min-height: 600px) and (max-width: 991px)  {
