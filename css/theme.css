@@ -67,6 +67,7 @@ html {
 @media all and (max-width: 768px) {
   html {
     font-size: 81.25%;
+    overflow-y: hidden;
   }
 }
 body {
@@ -9752,6 +9753,9 @@ input#reloj {
 }
 .hide {
   display: block;
+}
+.fixed-form {
+    bottom: 0;
 }
 }
 @media all and (min-height: 600px) and (max-width: 991px)  {
